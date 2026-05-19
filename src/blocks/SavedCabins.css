@@ -1,0 +1,36 @@
+.saved-cabins {
+  width: 100%;
+  min-height: calc(100vh - 80px - 60px);
+  background-color: #f4f1ea;
+  padding: 60px 20px;
+}
+
+.saved-cabins__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.saved-cabins__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #2c3e2f;
+  margin-bottom: 12px;
+}
+
+.saved-cabins__subtitle {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #606c5a;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 600px) {
+  .saved-cabins {
+    padding: 40px 16px;
+  }
+
+  .saved-cabins__title {
+    font-size: 28px;
+  }
+}

@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@400;500&display=swap");
+@import "./blocks/Header.css";
+@import "./blocks/App.css";
+@import "./blocks/Main.css";
+@import "./blocks/CabinCard.css";
+@import "./blocks/CabinCardList.css";
+@import "./blocks/PopupWithForm.css";
+
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

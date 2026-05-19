@@ -1,0 +1,125 @@
+.main {
+  width: 100%;
+  min-height: calc(100vh - 80px - 60px);
+  background-color: #f4f1ea;
+}
+
+.main__hero {
+  background-image:
+    linear-gradient(rgba(44, 62, 47, 0.6), rgba(44, 62, 47, 0.8)),
+    url("../images/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  text-align: center;
+  color: #f4f1ea;
+}
+
+.main__hero-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.main__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 16px;
+  font-family: "Inter", sans-serif;
+}
+
+.main__subtitle {
+  font-size: 18px;
+  margin-bottom: 32px;
+  color: #c2bfb7;
+}
+
+.search-form {
+  display: flex;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.search-form__input {
+  flex: 1;
+  border: none;
+  padding: 16px 20px;
+  font-size: 16px;
+  outline: none;
+  color: #2c3e2f;
+}
+
+.search-form__input::placeholder {
+  color: #a3b899;
+}
+
+.search-form__button {
+  background-color: #a3b899;
+  color: #2c3e2f;
+  border: none;
+  padding: 0 32px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-form__button:hover {
+  background-color: #8fa385;
+}
+
+.main__results {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.main__results-title {
+  font-size: 28px;
+  color: #2c3e2f;
+  margin-bottom: 24px;
+}
+
+.main__placeholder-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.cabin-placeholder-card {
+  background-color: #ffffff;
+  border: 1px dashed #a3b899;
+  border-radius: 8px;
+  padding: 40px 20px;
+  text-align: center;
+  color: #8fa385;
+  font-weight: 500;
+}
+
+/* Responsivo */
+@media screen and (max-width: 600px) {
+  .main__title {
+    font-size: 28px;
+  }
+
+  .search-form {
+    flex-direction: column;
+    background-color: transparent;
+    box-shadow: none;
+    gap: 12px;
+  }
+
+  .search-form__input {
+    border-radius: 8px;
+    padding: 14px;
+  }
+
+  .search-form__button {
+    border-radius: 8px;
+    padding: 14px;
+  }
+}

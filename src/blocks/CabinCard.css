@@ -1,0 +1,107 @@
+.cabin-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.cabin-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(44, 62, 47, 0.15);
+}
+
+.cabin-card__image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* Botón flotante*/
+.cabin-card__save-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: none;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232c3e2f' stroke-width='2'%3E%3Cpath d='M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
+}
+
+.cabin-card__save-button:hover {
+  transform: scale(1.1);
+  background-color: #ffffff;
+}
+
+.cabin-card__save-button--active {
+  background-color: #a3b899;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%232c3e2f' stroke='%232c3e2f' stroke-width='2'%3E%3Cpath d='M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.cabin-card__content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.cabin-card__location {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #8fa385;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+
+.cabin-card__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #2c3e2f;
+  margin-bottom: 10px;
+}
+
+.cabin-card__description {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #606c5a;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.cabin-card__footer {
+  border-top: 1px solid #f4f1ea;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cabin-card__price {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #606c5a;
+}
+
+.cabin-card__price-amount {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #2c3e2f;
+}

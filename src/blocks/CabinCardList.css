@@ -1,0 +1,17 @@
+.cabin-list-container {
+  width: 100%;
+}
+
+.cabin-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 30px;
+  padding: 10px 0;
+}
+
+@media screen and (max-width: 480px) {
+  .cabin-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
