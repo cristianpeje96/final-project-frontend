@@ -1,16 +1,19 @@
-# React + Vite
+# 🌲 Chalet Terraverde - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+¡Bienvenido a **Chalet Terraverde**! Esta es la aplicación frontend para una plataforma moderna de búsqueda y reserva de cabañas, chalets y refugios naturales. El proyecto ha sido desarrollado utilizando **React** y **Vite**, asegurando una interfaz rápida, modular y completamente responsiva.
 
-Currently, two official plugins are available:
+## 🚀 Características del Proyecto (Primera Entrega)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Arquitectura Modular:** Componentes independientes y reutilizables organizados.
+- **Enrutamiento Dinámico:** Navegación fluida entre páginas (`/` y `/saved-cabins`) sin recargar el navegador utilizando `react-router-dom`.
+- **Estructura de Estilos Escusable:** Uso estricto de la metodología **BEM** para mantener un CSS limpio, legible y escalable.
+- **Tipografía:** Combinación moderna de fuentes (`Montserrat` para títulos de marca y `Roboto` para textos de lectura) integrada mediante Google Fonts.
+- **Componentes Interactivos:** Modales dinámicos (Popups) controlados mediante estados de React (`useState`) con cierre accesible (botón "X" y clic en el fondo/overlay).
 
-## React Compiler
+## 🛠️ Tecnologías Utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React 18** (Hooks, Props, Virtual DOM)
+- **Vite** (Entorno de desarrollo rápido)
+- **React Router Dom** (Gestión de rutas adaptadas)
+- **CSS3** (Diseño responsivo, Grid, Flexbox y Metodología BEM)
+- **Google Fonts** (Fuentes Montserrat y Roboto)
