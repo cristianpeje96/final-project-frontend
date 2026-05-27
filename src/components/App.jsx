@@ -5,10 +5,11 @@ import Main from "./Main/Main";
 import Footer from "./Footer/Footer";
 import SavedCabins from "./SavedCabins";
 import PopupWithForm from "./PopupWithForm";
+import { fetchCabins } from "../utils/api";
 import "../index.css";
 
 function App() {
-  // Estado para controlar los modales (Login/Registro)
+  const [cabins, setCabins] = useState([]);
   const [isLoginPopupOpen, setIsLoginPopupOpen] = useState(false);
 
   const handleLoginClick = () => {
